@@ -1,0 +1,11 @@
+<svg width="900" height="900" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="900" rx="80" fill="none"/>
+<ellipse cx="450" cy="805" rx="260" ry="38" fill="#000" opacity=".28"/>
+<path d="M330 205 Q450 80 570 205 L610 275 L710 320 L660 485 L600 460 L600 730 Q600 775 552 775 H348 Q300 775 300 730 L300 460 L240 485 L190 320 L290 275 Z" fill="#050505"/>
+<path d="M344 210 Q450 120 556 210 Q525 270 450 278 Q375 270 344 210Z" fill="#111"/>
+<path d="M410 280 C390 345 385 410 392 470" stroke="#9fffe0" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M490 280 C510 345 515 410 508 470" stroke="#ff4f61" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M365 555 Q450 600 535 555 L535 720 H365 Z" fill="#101010"/>
+<image href="oasis-logo.png" x="340" y="315" width="220" height="220" preserveAspectRatio="xMidYMid meet"/>
+<text x="450" y="635" text-anchor="middle" font-size="45" font-family="Arial Black, Arial" fill="#ff4f61">REVIVE</text>
+</svg>
