@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Oasis Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="site">
+
+    <img class="page-art" src="assets/oasis-homepage.png" alt="The Oasis Shop" />
+
+    <header class="click-layer">
+      <a class="nav-link home" href="#" aria-label="Home"></a>
+      <a class="nav-link shop" href="#shop" aria-label="Shop"></a>
+      <a class="nav-link about" href="#about" aria-label="About"></a>
+      <a class="nav-link contact" href="#contact" aria-label="Contact"></a>
+      <a class="nav-link discord" href="https://discord.gg/x7P8UfMB" target="_blank" aria-label="Discord"></a>
+      <button class="icon search" onclick="alert('Search coming soon!')" aria-label="Search"></button>
+      <button class="icon account" onclick="alert('Account coming soon!')" aria-label="Account"></button>
+      <button class="icon cart" onclick="openCart()" aria-label="Cart"></button>
+    </header>
+
+    <a class="browse-btn" href="#shop" aria-label="Browse Products"></a>
+
+    <section id="shop" class="shop-hotspots">
+      <button class="product product-one" onclick="viewProduct('The Oasis T-Shirt', '$24.99')"></button>
+      <button class="product product-two" onclick="viewProduct('The Oasis Tumbler', '$19.99')"></button>
+      <button class="heart heart-one" onclick="favoriteItem('The Oasis T-Shirt')"></button>
+      <button class="heart heart-two" onclick="favoriteItem('The Oasis Tumbler')"></button>
+    </section>
+
+    <section id="about"></section>
+    <section id="contact"></section>
+
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal()">×</button>
+      <h2 id="modal-title">Product</h2>
+      <p id="modal-price"></p>
+      <p>Revive and Play Again with exclusive Oasis gear.</p>
+      <button class="add-cart" onclick="addToCart()">Add To Cart</button>
+    </div>
+  </div>
+
+  <script>
+    let cartCount = 0;
+
+    function viewProduct(name, price) {
+      document.getElementById("modal-title").innerText = name;
+      document.getElementById("modal-price").innerText = price;
+      document.getElementById("modal").classList.add("show");
+    }
+
+    function favoriteItem(name) {
+      alert(name + " added to favorites!");
+    }
+
+    function addToCart() {
+      cartCount++;
+      alert("Added to cart! Cart total: " + cartCount);
+      closeModal();
+    }
+
+    function openCart() {
+      alert("Cart items: " + cartCount);
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.remove("show");
+    }
+  </script>
+
+</body>
+</html>
